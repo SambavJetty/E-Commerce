@@ -1,0 +1,22 @@
+.footer img {
+    width: 1513px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footer img {
+        width: 100%; /* Adjust image width for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer img {
+        width: 100%; /* Adjust image width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer img {
+        width: 100%; /* Ensure the image is responsive on small screens */
+    }
+}

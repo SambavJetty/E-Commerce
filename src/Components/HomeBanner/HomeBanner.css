@@ -1,0 +1,33 @@
+.homebanner-container {
+    img {
+        margin-left: 180px;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .homebanner-container {
+        img {
+            margin-left: 0; /* Center the image on tablets */
+            width: 100%;    /* Make the image responsive */
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .homebanner-container {
+        img {
+            margin-left: 0; /* Center the image on smaller screens */
+            width: 100%;    /* Make the image responsive */
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .homebanner-container {
+        img {
+            margin-left: 0; /* Center the image on very small screens */
+            width: 100%;    /* Ensure image takes full width */
+        }
+    }
+}

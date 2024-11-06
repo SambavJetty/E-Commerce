@@ -1,0 +1,26 @@
+.home-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .home-footer-container {
+        margin-bottom: 40px; /* Adjust margin for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .home-footer-container {
+        margin-bottom: 30px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .home-footer-container {
+        margin-bottom: 20px; /* Reduce margin for very small screens */
+        flex-direction: column; /* Stack elements vertically on very small screens */
+    }
+}

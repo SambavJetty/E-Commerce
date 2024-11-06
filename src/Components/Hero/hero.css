@@ -1,0 +1,94 @@
+.topheader-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.topheader-left {
+    margin-left: 135px;
+}
+
+.topheader-right {
+    img {
+        width: 940px;
+        height: 380px;
+    }
+}
+
+.divider {
+    width: 2px; /* Width of the vertical line */
+    background-color: #060000; /* Color of the vertical line */
+    height: auto; /* Set height to auto */
+    align-self: stretch;
+    margin-bottom: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .topheader-container {
+        flex-direction: column; /* Stack elements vertically for tablet */
+        gap: 20px;
+    }
+
+    .topheader-left {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .topheader-right img {
+        width: 100%; /* Adjust image width for tablets */
+        height: auto; /* Maintain aspect ratio for images */
+    }
+
+    .divider {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 1px; /* Reduce height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .topheader-container {
+        flex-direction: column; /* Stack elements vertically for smaller screens */
+        gap: 15px;
+    }
+
+    .topheader-left {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .topheader-right img {
+        width: 100%; /* Adjust image width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .divider {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 1px; /* Adjust height for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .topheader-container {
+        flex-direction: column; /* Stack elements for very small screens */
+        gap: 10px;
+    }
+
+    .topheader-left {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .topheader-right img {
+        width: 100%; /* Make image responsive on small screens */
+        height: auto;
+    }
+
+    .divider {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 1px;
+    }
+}

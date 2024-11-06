@@ -1,0 +1,22 @@
+.new-arrival-container {
+    margin-left: 180px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .new-arrival-container {
+        margin-left: 100px; /* Adjust for tablet screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .new-arrival-container {
+        margin-left: 50px; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .new-arrival-container {
+        margin-left: 0; /* Center align for very small screens */
+    }
+}

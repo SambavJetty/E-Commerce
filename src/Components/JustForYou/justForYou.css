@@ -1,0 +1,71 @@
+.jfy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.jfy-main {
+    width: 1200px;
+    display: flex;
+    gap: 25px;
+}
+
+.jfy-container img {
+    align-items: center;
+    justify-content: center;
+}
+
+.jfy-header {
+    margin-left: -28px;
+    width: 1240px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .jfy-main {
+        width: 90%; /* Adjust main width for tablets */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .jfy-header {
+        width: 100%; /* Make the header width responsive */
+        margin-left: 0; /* Remove negative margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .jfy-main {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        width: 100%;
+        gap: 15px;
+    }
+
+    .jfy-container {
+        gap: 30px; /* Reduce gap for smaller screens */
+    }
+
+    .jfy-header {
+        margin-left: 0; /* Remove negative margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .jfy-main {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .jfy-container {
+        gap: 20px; /* Further reduce gap for very small screens */
+    }
+
+    .jfy-header {
+        margin-left: 0;
+    }
+}

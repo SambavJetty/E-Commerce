@@ -1,0 +1,25 @@
+.topHeader img {
+    width: 1513px;
+    height: 48px;
+}
+
+@media (max-width: 1024px) {
+    .topHeader img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .topHeader img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .topHeader img {
+        width: 100%;
+        height: auto;
+    }
+}

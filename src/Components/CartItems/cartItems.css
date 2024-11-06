@@ -1,0 +1,111 @@
+.cart-items-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-items-header img {
+    margin-left: 160px;
+}
+
+.cart-items-header {
+    margin-bottom: -200px;
+}
+
+.cart-items-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cartitems-format-main {
+    margin-left: -70px;
+    width: 1300px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 290px;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cartitems-img {
+    width: 40px;
+}
+
+.cartitems-quantity {
+    margin-left: 40px;
+}
+
+.cartitems-price {
+    margin-left: 40px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .cart-items-header img {
+        margin-left: 100px; /* Adjust for tablet */
+    }
+
+    .cart-items-header {
+        margin-bottom: -150px;
+    }
+
+    .cartitems-format-main {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .cartitems-quantity,
+    .cartitems-price {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-items-header img {
+        margin-left: 50px; /* Adjust for smaller screens */
+    }
+
+    .cart-items-header {
+        margin-bottom: -100px;
+    }
+
+    .cartitems-format-main {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .cartitems-quantity,
+    .cartitems-price {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-items-header img {
+        margin-left: 0; /* Center image on very small screens */
+    }
+
+    .cart-items-header {
+        margin-bottom: -50px;
+    }
+
+    .cartitems-format-main {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .cartitems-quantity,
+    .cartitems-price {
+        margin-left: 0;
+        text-align: center; /* Center text on small screens */
+    }
+}
