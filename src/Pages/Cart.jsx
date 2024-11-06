@@ -14,7 +14,10 @@ const Cart = () => {
       <div className='cart-container'>
         <CartItems/>
         <div className='cart-bottom'>
-          <img src={couponCodeimg} alt="" />
+          <div className='coupon-img'>
+             <img src={couponCodeimg} alt="" />
+          </div>
+          
           <div className='cart-total'>
               <h3>Cart Total</h3>
               <div className="cart-total-row">
